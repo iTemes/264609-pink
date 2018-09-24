@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артем Аксентенко](https://up.htmlacademy.ru/adaptive/15/user/264609).
-* Наставник: `Неизвестно`.
+* Наставник: [Кекс].
 
 ---
 
