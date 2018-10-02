@@ -2,11 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
+  <body class="page">
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <span class="page-logo"></span>
+          </li>
+          <li class="main-nav__item">
+            Главная
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="app">
+        <a class="app__download" href="#">Скачать приложение</a>
+        <div class="app__markets">
+          <a class="app__link app__link--apple" href="#">apple</a>
+          <a class="app__link app__link--android" href="#">Android</a>
+          <a class="app__link app__link--windows" href="#">windows</a>
+        </div>
+        <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title visually-hidden">Приложение для фотографий Pink!</h1>
+      <section class="slogan">
+        <p class="slogan__text">Устали от серости мегаполиса?</p>
+        <p class="slogan__text">Нам есть, что вам предложить!</p>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <div class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        </div>
+        <div class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+      <section class="phone-pictures">
+        <picture class="phone-pictures__item">
+          <img src="#" alt="Изображение телефона">
+        </picture>
+        <picture class="phone-pictures__item">
+          <img src="#" alt="Изображение телефона">
+        </picture>
+        <picture class="phone-pictures__item">
+          <img src="#" alt="Изображение телефона">
+        </picture>
+      </section>
+      <section class="rewiews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="rewiews__wrapper slider">
+          <div class="rewiews__list slder__list">
+            <blockquote class="rewiews__item slider__item">
+              <cite class="rewiews__author">Николай Петров</cite>
+                <p class="rewiews__text">
+                  "Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комметариях к выложенной фотографии!"
+                </p>
+            </blockquote>
+          </div>
+        </div>
+        <p class="rewiews__toggles slider__toggles">
+          <button class="slider__toggle rewiews__link--selected" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="app-version">
+        <article class="app-version__item">
+          <div class="app-version__header">
+            <p class="app-version__title">Стандарт</p>
+            <p class="app-version__price">3,99 USD</p>
+          </div>
+          <ul class="app-version__features">
+            <li class="app-version__features-item">Розовый фильр</li>
+            <li class="app-version__features-item">Смайлики</li>
+            <li class="app-version__features-item">Комментарии</li>
+          </ul>
+        </article>
+        <div class="app-version__nav">
+            <a class="app-versions__link" href="#"></a>
+            <a class="app-version__link app-version__link--selected" href="#"></a>
+            <a class="app-version__link" href="#"></a>
+          </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__slogan">Остались вопрсоы? Свяжитесь с нами</p>
+      <section class="contacts">
+        <div class="contacts__item">
+          <p class="contacts__title">Звоните</p>
+          <a class="contacts__phone" href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__title">Пишите</p>
+          <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__title">Приезжайте в гости</p>
+          <address class="contacts__item__adress">ул.Большая Конющенная, 19/8</address>
+        </div>
+      </section>
+      <section class="map">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+      </section>
+    </footer>
   </body>
 </html>
