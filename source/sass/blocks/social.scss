@@ -1,0 +1,9 @@
+.social--index {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .social--index {
+    display: block;
+  }
+}

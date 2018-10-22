@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -11,7 +11,9 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <span class="page-logo"></span>
+            <a class="page-logo">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+            </a>
           </li>
           <li class="main-nav__item">
             Главная
@@ -27,47 +29,61 @@
           </li>
         </ul>
       </nav>
-      <section class="app">
-        <a class="app__download" href="#">Скачать приложение</a>
-        <div class="app__markets">
-          <a class="app__link app__link--apple" href="#">apple</a>
-          <a class="app__link app__link--android" href="#">Android</a>
-          <a class="app__link app__link--windows" href="#">windows</a>
-        </div>
-        <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
     </header>
     <main class="page-main">
       <h1 class="page-main__title visually-hidden">Приложение для фотографий Pink!</h1>
-      <section class="slogan">
-        <p class="slogan__text">Устали от серости мегаполиса?</p>
-        <p class="slogan__text">Нам есть, что вам предложить!</p>
+      <section class="app">
+        <div class="app__wrapper">
+          <b class="app__slogan">Взгляните на жизнь ярче!</b>
+          <a class="app__download" href="#">Скачать приложение</a>
+          <div class="app__markets">
+            <a class="app__link app__link--apple" href="#">apple</a>
+            <a class="app__link app__link--android" href="#">Android</a>
+            <a class="app__link app__link--windows" href="#">windows</a>
+            <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения</h2>
-        <div class="features__item">
-          <h3 class="features__title">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+        <div class="features__slogans">
+          <p class="features__slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan">Нам есть, что вам предложить!</p>
         </div>
-        <div class="features__item">
-          <h3 class="features__title">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+        <div class="features__wrapper">
+          <div class="features__item-wrapper">
+            <div class="features__item">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </div>
+          </div>
+          <div class="features__pictures">
+            <picture class="features__picture">
+              <img src="http://placehold.it/320x280" alt="Изображение телефона">
+            </picture>
+            <picture class="features-picture features-picture--hidden">
+              <img src="http://placehold.it/320x280" alt="Изображение телефона">
+            </picture>
+            <picture class="features-picture features-picture--hidden">
+              <img src="http://placehold.it/320x280" alt="Изображение телефона">
+            </picture>
+          </div>
         </div>
-        <div class="features__item">
-          <h3 class="features__title">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="features__effect">
+          <b>Эффект на 24 часа!</b>
+          <p>
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки.
+          </p>
+          <a href="#">Узнать больше об исследовании</a>
         </div>
-      </section>
-      <section class="phone-pictures">
-        <picture class="phone-pictures__item">
-          <img src="#" alt="Изображение телефона">
-        </picture>
-        <picture class="phone-pictures__item">
-          <img src="#" alt="Изображение телефона">
-        </picture>
-        <picture class="phone-pictures__item">
-          <img src="#" alt="Изображение телефона">
-        </picture>
       </section>
       <section class="rewiews">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -83,28 +99,84 @@
           </div>
         </div>
         <p class="rewiews__toggles slider__toggles">
-          <button class="slider__toggle rewiews__toggle--selected" type="button">1</button>
+          <button class="slider__toggle slider__toggle--selected" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
       <section class="app-version">
-        <article class="app-version__item">
-          <div class="app-version__header">
-            <p class="app-version__title">Стандарт</p>
-            <p class="app-version__price">3,99 USD</p>
-          </div>
-          <ul class="app-version__features">
-            <li class="app-version__features-item">Розовый фильр</li>
-            <li class="app-version__features-item">Смайлики</li>
-            <li class="app-version__features-item">Комментарии</li>
-          </ul>
-        </article>
+        <table class="app-version__table">
+          <caption class="visually-hidden">Описание тарифов приложения</caption>
+          <tr>
+              <th>
+
+              </th>
+            <th>
+              <p class="app-version__title">База</p>
+              <p class="app-version__price">1,99 USD</p>
+            </th>
+            <th class="app-version--hit">
+              <p class="app-version__title">Стандарт</p>
+              <p class="app-version__price">3,99 USD</p>
+            </th>
+            <th>
+              <p class="app-version__title">Анлим</p>
+            <p class="app-version__price">9,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <p class="app-version__features-empty">Розовый фильтр</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Розовый фильтр</p>
+            </td>
+            <td class="app-version--hit">
+              <p class="app-version__features-item ">Розовый фильтр</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Розовый фильтр</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="app-version__features-empty">Смайлики</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Смайлики</p>
+            </td>
+            <td class="app-version--hit">
+              <p class="app-version__features-item">Смайлики</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Смайлики</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="app-version__features-empty">Комментарии</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Комментарии</p>
+            </td>
+            <td class="app-version--hit">
+              <p class="app-version__features-item">Комментарии</p>
+            </td>
+            <td>
+              <p class="app-version__features-item">Комментарии</p>
+            </td>
+          </tr>
+        </table>
         <div class="app-version__nav">
-            <a class="app-versions__link" href="#"></a>
-            <a class="app-version__link app-version__link--selected" href="#"></a>
-            <a class="app-version__link" href="#"></a>
-          </div>
+          <a class="app-versions__link" href="#"></a>
+          <a class="app-version__link app-version__link--selected" href="#"></a>
+          <a class="app-version__link" href="#"></a>
+        </div>
+        <p class="app-version__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--selected" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
       </section>
     </main>
     <footer class="page-footer">
@@ -124,8 +196,25 @@
         </div>
       </section>
       <section class="map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002876!2d30.32085871576944!3d59.93871916905456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1540021734171" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
+      <div class="page-footer__social social social--index">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright copyright--index">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </footer>
   </body>
 </html>

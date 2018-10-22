@@ -1,0 +1,55 @@
+.upload {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.upload__slogan {
+  text-align: center;
+}
+
+.upload__controls input {
+  display: none;
+}
+
+.upload__controls input:first-child {
+  display: block;
+}
+
+@media (min-width: $tablet-widths) {
+  .upload {
+    width: 660px;
+  }
+
+  .upload__slogan {
+    width: 100%;
+  }
+
+  .upload__box {
+    display: flex;
+  }
+
+  .upload__filters {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .upload__controls input {
+    display: block;
+  }
+
+  .upload__filters-buttons {
+    width: 80px;
+  }
+
+  .upload__buttons {
+    width: 300px;
+  }
+
+  .upload__button {
+    display: block;
+
+    width: 260px;
+    margin: 0 auto;
+  }
+}
