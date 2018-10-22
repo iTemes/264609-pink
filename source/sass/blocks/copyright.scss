@@ -1,0 +1,13 @@
+.copyright {
+  outline: 2px solid #00ffff;
+}
+
+.copyright--index {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .copyright--index {
+    display: block;
+  }
+}

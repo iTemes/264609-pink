@@ -1,157 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Фотографии</title>
-</head>
-<body class="page">
-  <header class="page-header">
-    <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <span class="page-logo"></span>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="index.html">Главная</a>
-      </li>
-      <li class="main-nav__item">
-        Фотографии
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="form.html">Конкурс</a>
-      </li>
-      <li class="main-nav__item">
-        <a class="main-nav__link" href="#">HTML Academy</a>
-      </li>
-    </ul>
-    <h1 class="page-header__title">Фотографии пользователей</h1>
-  </header>
-  <main class="page-main">
-    <section class="photos">
-      <p class="photos__slogan">Взгляните на фоторафии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Анна</cite>
-          <span class="photos__time">(5 минут назад)</span>
-          <p class="photos__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">215</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Левон</cite>
-          <span class="photos__time">(5 часов назад)</span>
-          <p class="photos__text">Вчера на луну летал, сегодня в руки к нам попал.</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">356</span></p>
-          <button class="photos__like-button" type="button">ЛАйк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Антон</cite>
-          <span class="photos__time">(12 часов назад)</span>
-          <p class="photos__text">Соседи будут рады!</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">666</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Борис</cite>
-          <span class="photos__time">(20 часов назад)</span>
-          <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">215</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Сергей</cite>
-          <span class="photos__time">(25 часов назад)</span>
-          <p class="photos__text">Самая кубанская в мире!</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">4</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Максим</cite>
-          <span class="photos__time">(40 часов назад)</span>
-          <p class="photos__text">Где снег то?</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">150</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-      <article class="photos__item">
-        <picture>
-          <img src="#" alt="Фотография пользователя">
-        </picture>
-        <blockquote class="photos__description">
-          <cite class="photos__author">Надежда</cite>
-          <span class="photos__time">(45 часов назад)</span>
-          <p class="photos__text">Всем GM и взаимные лайки!</p>
-          <p class="photos__like">Нравится:<span class="photos__like-count">2560</span></p>
-          <button class="photos__like-button" type="button">Лайк</button>
-        </blockquote>
-      </article>
-    </section>
-    <section class="upload">
-      <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-      <div class="upload__box">
-        <picture class="upload__item">
-          <img src="#" alt="Ваша фотография">
-        </picture>
-        <p class="upload__filters">
-          <button class="upload__filter upload__filter--cut" type="button">Вырезать</button>
-          <button class="upload__filter upload__filter--fill" type="button">Заливка</button>
-          <button class="upload__filter upload__filter--contrast" type="button">Контраст</button>
-          <span class="upload__range"></span>
-        </p>
-        <div class="upload__buttons">
-          <button class="upload__button upload__button--upload" type="button">Запостить</button>
-          <button class="upload__button upload__button--reset" type="button">Отмена</button>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="page-logo" href="index.html">
+              <img src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            Фотографии
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
+    </header>
+    <main class="page-main">
+      <section class="photos">
+        <p class="photos__slogan">Взгляните на фоторафии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+        <div class="photos__wrapper">
+          <article class="photos__item photos__item--hit">
+            <picture class="photos__hit">
+              <img src="http://placehold.it/320x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Анна</cite>
+              <span class="photos__time">(5 минут назад)</span>
+              <p class="photos__text">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавайте вопросы!</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">215</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Левон</cite>
+              <span class="photos__time">(5 часов назад)</span>
+              <p class="photos__text">Вчера на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">356</span></p>
+              <button class="photos__like-button" type="button">ЛАйк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Антон</cite>
+              <span class="photos__time">(12 часов назад)</span>
+              <p class="photos__text">Соседи будут рады!</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">666</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Борис</cite>
+              <span class="photos__time">(20 часов назад)</span>
+              <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">215</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Сергей</cite>
+              <span class="photos__time">(25 часов назад)</span>
+              <p class="photos__text">Самая кубанская в мире!</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">4</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Максим</cite>
+              <span class="photos__time">(40 часов назад)</span>
+              <p class="photos__text">Где снег то?</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">150</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
+          <article class="photos__item">
+            <picture>
+              <img src="http://placehold.it/280x180" alt="Фотография пользователя">
+            </picture>
+            <blockquote class="photos__description">
+              <cite class="photos__author">Надежда</cite>
+              <span class="photos__time">(45 часов назад)</span>
+              <p class="photos__text">Всем GM и взаимные лайки!</p>
+              <p class="photos__like">Нравится:<span class="photos__like-count">2560</span></p>
+              <button class="photos__like-button" type="button">Лайк</button>
+            </blockquote>
+          </article>
         </div>
+      </section>
+      <section class="upload">
+        <p class="upload__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="upload__box">
+          <picture class="upload__item">
+            <img src="http://placehold.it/280x370" alt="Ваша фотография">
+          </picture>
+          <div class="upload__filters">
+            <div class="upload__filters-buttons">
+              <button class="upload__filter upload__filter--cut" type="button">Вырезать</button>
+              <button class="upload__filter upload__filter--fill" type="button">Заливка</button>
+              <button class="upload__filter upload__filter--contrast" type="button">Контраст</button>
+            </div>
+            <div class="upload__controls">
+              <input class="upload__controls--active" type="range" min="0" max="100" value="80" step="10">
+              <input type="range" min="0" max="100" value="80" step="10">
+              <input type="range" min="0" max="100" value="80" step="10">
+            </div>
+            <div class="upload__buttons">
+                <button class="upload__button upload__button--upload" type="button">Запостить</button>
+                <button class="upload__button upload__button--reset" type="button">Отмена</button>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
+          </li>
+        </ul>
       </div>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://twitter.com/htmlacademy">Мы в Твитере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.youtube.com/htmlacademy">Мы в Ютубе</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <span class="copyright__text">Разработано:</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-  </footer>
-</body>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
 </html>

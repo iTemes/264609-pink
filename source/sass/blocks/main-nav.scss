@@ -1,0 +1,41 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #283645;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  @include reset-list();
+
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-nav__item {
+  min-height: 64px;
+
+  text-transform: uppercase;
+
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: $desktop-widths) {
+  .main-nav {
+    width: 940px;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+  }
+}

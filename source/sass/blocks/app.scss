@@ -1,0 +1,23 @@
+.app {
+  width: 100%;
+}
+
+.app__wrapper {
+  margin: 0 auto;
+
+  width: 320px;
+}
+
+.app__slogan {
+  display: none;
+}
+
+.app__download {
+  display: block;
+}
+
+@media (min-width: $tablet-widths) {
+  .app__slogan {
+    display: block;
+  }
+}

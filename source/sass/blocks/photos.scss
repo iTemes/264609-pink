@@ -1,0 +1,23 @@
+.photos {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-widths) {
+  .photos {
+    width: 660px;
+  }
+
+  .photos__item {
+    width: 300px;
+  }
+
+  .photos__item--hit {
+    width: 100%;
+  }
+
+  .photos__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

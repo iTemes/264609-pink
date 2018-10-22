@@ -1,0 +1,23 @@
+.app-version__table {
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-widths) {
+  .app-version__table td {
+    display: none;
+  }
+
+  .app-version__table th {
+    display: none;
+  }
+
+  .app-version__table .app-version--hit {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .app-version__features-item {
+    @include hide-text();
+  }
+}
